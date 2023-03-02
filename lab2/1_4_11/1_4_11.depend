@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1677758672 source:d:\repositories\psc169397\lab2\1_4_11\main.c
+1677783282 source:d:\repositories\psc169397\lab2\1_4_11\main.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
+	<stdbool.h>
 

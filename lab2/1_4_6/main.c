@@ -3,21 +3,23 @@
 
 int main()
 {
-    int n, i=2;
+    int n, i=2, result=2;
     printf("Enter the number which is greater than 2: ");
     scanf("%d", &n);
     if (n > 2){
         if(n%2==0){
-            while(i<=n){
-               i*=(i+2);
+            while(i<=(n-2)){
+               result*=(i+2);
+               i += 2;
             }
         }
         else{
-            while(i<=(n-1)){
-               i*=(i+2);
+            while(i<=(n-3)){
+               result*=(i+2);
+               i += 2;
             }
         }
-        printf("Product: %d", i);
+        printf("Product: %d", result);
     }
     else{
         printf("Number isn't greater than 2.");

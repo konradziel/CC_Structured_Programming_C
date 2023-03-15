@@ -1,0 +1,7 @@
+wskaźnik do stałej wartości
+const int *a;
+int const * a;
+stały wskaźniki do wartości
+int * const a;
+stałe wskaźnik do stałej wartości
+int const * const a;

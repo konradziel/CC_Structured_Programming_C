@@ -11,8 +11,8 @@ int main()
     cutOutFromFirst(text, text2);
     printf("%s\n", text);
 
-    wchar_t textWc[]="Hello world";
-    wchar_t text2Wc[]="Sold";
+    wchar_t textWc[]=L"Hello world";
+    wchar_t text2Wc[]=L"Sold";
     cutOutFromFirstWchar(textWc, text2Wc);
     wprintf(L"%s\n", textWc);
     return 0;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int maxAvgRow(unsigned int n, unsigned int m, int tab[n][m]){
+int maxAvgRow(int **tab, unsigned int n, unsigned int m){
     int i, j, max, sum=0;
     double avg;
     for(i=0; i<n; i++){
@@ -19,6 +19,8 @@ int maxAvgRow(unsigned int n, unsigned int m, int tab[n][m]){
 int main()
 {
     int tab[4][3] = {{1,2,4},{-2,3,5},{3,4,2},{2,7,-3}};
-    printf("Row with highest avg is %d\n", maxAvgRow(4, 3, tab));
+    int *wsk[4] = {tab[0], tab[1], tab[2], tab[3]};
+    int result = maxAvgRow(wsk, 4, 3);
+    printf("Row with highest avg is %d\n", result);
     return 0;
 }

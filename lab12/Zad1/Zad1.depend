@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1684315895 source:d:\repositories\psc169397\lab12\zad1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
